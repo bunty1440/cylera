@@ -31,4 +31,4 @@ def checkout():
     return Response(json.dumps({ "registers": store.getAllRegisterState() }), HTTPStatus.CREATED)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(port=5000)
